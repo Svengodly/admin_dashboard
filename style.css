@@ -1,0 +1,121 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    align-items: stretch;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Poppins, Veranda, sans-serif;
+}
+
+body .item {
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+.item.sidebar {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: #0ea5e9;
+    color: #fff;
+    /* font-size: 2rem; */
+}
+
+.item.cards {
+    grid-column: 2;
+}
+
+.item.header {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.sideitem {
+    /* background-color: bisque; */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.headeritem {
+    background-color: rgb(154, 154, 226);
+}
+
+.cards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+}
+
+.leftcard > div {
+    height: 200px;
+}
+
+.leftcard, .rightcard {
+    display: grid;
+}
+
+.leftcard {
+    grid-template-columns: 1fr 1fr;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    overflow: visible;
+}
+
+.sideitem:first-child {
+    font-size: 2rem;
+}
+
+li {
+    padding-left: 3.5rem;
+    background-repeat: no-repeat;
+    background-position:0 0;
+    margin-bottom: 15px;
+}
+
+#dashboard {
+    background-image: url(images/view-dashboard.svg);
+}
+
+#home {
+    background-image: url(images/home.svg);
+}
+
+#profile {
+    background-image: url(images/card-account-details.svg);
+}
+
+#messages {
+    background-image: url(images/message-reply.svg);
+}
+
+#history {
+    background-image: url(images/clock-time-four.svg);
+}
+
+#tasks {
+    background-image: url(images/note-multiple.svg);
+}
+
+#communities {
+    background-image: url(images/account-group.svg);
+}
+
+#settings {
+    background-image: url(images/cog.svg);
+}
+
+#support {
+    background-image: url(images/help-box.svg);
+}
+
+#privacy {
+    background-image: url(images/shield-check.svg);
+}
